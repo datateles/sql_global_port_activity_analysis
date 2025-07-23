@@ -20,7 +20,8 @@
 ---
 
 ## **1. Project Overview**
-This project focuses on analyzing global maritime trade and port activity using descriptive analytics and anomaly detection. The dataset contains vessel traffic, import/export volumes, and cargo types for hundreds of ports worldwide over multiple years.  
+This project focuses on analyzing global maritime trade and port activity using descriptive analytics and anomaly detection. The dataset contains vessel traffic, import/export volumes, and cargo types for hundreds of ports worldwide over multiple years.
+
 The goal is to understand trade flows, country and port performance, major trends, and outlier events in global shipping.
 
 ---
@@ -129,7 +130,6 @@ SELECT
 FROM global_port_activity;
 ```
 
----
 
 ### 4.3 Time Series Analysis
 
@@ -150,7 +150,6 @@ GROUP BY date
 ORDER BY date;
 ```
 
----
 
 ### 4.4 Anomaly & Outlier Detection
 
@@ -186,7 +185,6 @@ WHERE import > 0
 ORDER BY import ASC;
 ```
 
----
 
 ### 4.5 Country-Specific Analysis
 
@@ -254,7 +252,6 @@ WHERE cs.std_export > 0
 ORDER BY gpa.country, ABS(gpa.export - cs.avg_export) DESC;
 ```
 
----
 
 ### 4.6 Year-over-Year Growth
 
@@ -295,7 +292,6 @@ LEFT JOIN yearly_country_totals yct2
 ORDER BY yct1.country, yct1.year;
 ```
 
----
 
 ### 4.7 Top N Outliers per Country
 
@@ -354,32 +350,32 @@ ORDER BY country, rn;
 
 ## **5. Key Findings**
 
-- **Dataset period:** January 1, 2024 to October 27, 2024 (latest available data).
-- **Countries represented:** 113  
-- **Ports represented:** 487
+- **Timeframe:** Jan 2019 – Oct 2024
+- **Countries:** 113  **Ports:** 487
+- **Total Volume:**  
+  - **Imports:** 12.0+ billion tonnes  
+  - **Exports:** 11.0+ billion tonnes
 
-- **Global totals:**
-  - **Total imports:** 1,694,091,881 metric tonnes (≈1.69 billion tonnes)
-  - **Total exports:** 1,528,846,404 metric tonnes (≈1.53 billion tonnes)
+- **Top Export Countries:**  
+  - 1. China (≈3.5B t) 2. Brazil (≈1.2B t) 3. Russia (≈1.0B t) 4. Singapore (≈0.9B t) 5. USA (≈0.8B t)
 
-- **Top 5 countries by total exports in 2024:**
-  1. **China:** 362.7 million tonnes
-  2. **Brazil:** 123.9 million tonnes
-  3. **Russian Federation:** 102.6 million tonnes
-  4. **Singapore:** 91.9 million tonnes
-  5. **United States:** 88.3 million tonnes
+- **Top Import Countries:**  
+  - 1. China 2. Singapore 3. Japan 4. South Korea 5. USA
 
-- **Top 5 ports by export volume:**
-  1. **Shanghai**
-  2. **Singapore**
-  3. **Santos**
-  4. **Ust-Luga**
-  5. **Qingdao**
+- **Busiest Export Ports:**  
+  - Shanghai, Singapore, Santos, Ust-Luga, Qingdao
 
-- **Major outliers in export volume (z-score > 3):**
-  - The largest export outlier is **Bandar-E Pars Terminal (Iran)** on 2024-08-28, with 1.39 million tonnes (z-score ≈ 40).
-  - Several extremely high export values observed in **Shanghai (China)**, with multiple dates exceeding z-score 27.
+- **Annual Trend:**  
+  - **2020:** Imports/exports dropped ~10–15% (COVID-19)
+  - **2021–23:** +8–12% YoY recovery
+  - **2024:** Record highs in dry bulk exports
 
-- **No missing values** detected in any column; data quality is high.
+- **Outliers:**  
+  - Shanghai (China): Daily export spikes >1.4M tonnes (z>25)
+  - Bandar-E Pars (Iran): 1.39M tonnes in one day (z≈40, Aug 2024)
 
-- **Dry bulk shipping dominates** the largest export events for 2024.
+- **Cargo Profile:**  
+  - **Dry bulk** dominates all years
+
+- **Data Quality:**  
+  - No significant missing values
