@@ -20,9 +20,7 @@
 ---
 
 ## **1. Project Overview**
-This project focuses on analyzing global maritime trade and port activity using descriptive analytics and anomaly detection. The dataset contains vessel traffic, import/export volumes, and cargo types for hundreds of ports worldwide over multiple years.
-
-The goal is to understand trade flows, country and port performance, major trends, and outlier events in global shipping.
+This project focuses on analyzing global maritime trade and port activity using descriptive analytics and anomaly detection. The dataset contains vessel traffic, import/export volumes, and cargo types for hundreds of ports worldwide over multiple years. The goal is to understand trade flows, country and port performance, major trends, and outlier events in global shipping.
 
 ---
 
