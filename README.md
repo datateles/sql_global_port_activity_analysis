@@ -103,7 +103,6 @@ WHERE TABLE_NAME = 'global_port_activity';
 SELECT TOP 10 * FROM global_port_activity;
 ```
 
----
 
 ### 4.2 Data Quality & Descriptives
 
