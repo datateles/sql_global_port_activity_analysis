@@ -349,7 +349,7 @@ ORDER BY country, rn;
 
 
 ## **5. Key Findings**
-### 🔹 **Main Observations**
+
 - **Timeframe:** Jan 2019 – Oct 2024
 - **Countries:** 113  **Ports:** 487
 - **Total Volume:**  
