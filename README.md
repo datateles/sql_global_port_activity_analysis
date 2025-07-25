@@ -20,7 +20,9 @@
 ---
 
 ## **1. Project Overview**
-This project focuses on analyzing global maritime trade and port activity using descriptive analytics and anomaly detection. The dataset contains vessel traffic, import/export volumes, and cargo types for hundreds of ports worldwide over multiple years. The goal is to understand trade flows, country and port performance, major trends, and outlier events in global shipping.
+This project focuses on analyzing global maritime trade and port activity using descriptive analytics and anomaly detection. The dataset contains vessel traffic, import/export volumes, and cargo types for hundreds of ports worldwide over multiple years.
+
+The goal is to understand trade flows, country and port performance, major trends, and outlier events in global shipping.
 
 ---
 
@@ -106,7 +108,7 @@ SELECT TOP 10 * FROM global_port_activity;
 ### 4.2 Data Quality & Descriptives
 
 ```sql
--- Row and null counts (expand for more columns)
+-- Row and null counts (expandable for more columns)
 SELECT COUNT(*) AS total_rows FROM global_port_activity;
 
 SELECT 
@@ -119,7 +121,7 @@ FROM global_port_activity;
 SELECT DISTINCT country FROM global_port_activity;
 SELECT DISTINCT portname FROM global_port_activity;
 
--- Descriptive statistics (example)
+-- Descriptive statistics (editable for different columns)
 SELECT 
     MIN(import_cargo) AS min_import_cargo,
     MAX(import_cargo) AS max_import_cargo,
@@ -139,7 +141,7 @@ FROM global_port_activity
 GROUP BY year, month
 ORDER BY year, month;
 
--- Daily trends for a specific country (edit as needed)
+-- Daily trends for a specific country (editable as needed)
 SELECT 
     date, SUM(import) AS daily_import, SUM(export) AS daily_export
 FROM global_port_activity
