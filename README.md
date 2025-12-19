@@ -15,7 +15,8 @@
    - [4.5 Country-Specific Analysis](#45-country-specific-analysis)  
    - [4.6 Year-over-Year Growth](#46-year-over-year-growth)  
    - [4.7 Top N Outliers per Country](#47-top-n-outliers-per-country)  
-5. [Key Findings](#key-findings)
+5. [Storytelling with Data](#storytelling-with-data)
+6. [Key Findings](#key-findings)
 
 ---
 
@@ -347,8 +348,14 @@ ORDER BY country, rn;
 
 ---
 
+## **5. Storytelling with Data**
 
-## **5. Key Findings**
+In progress with Microsoft Excel, a visually compelling narrative with data based on key findings. . . .
+
+---
+
+
+## **6. Key Findings**
 
 - **Timeframe:** Jan 2019 – Oct 2024
 - **Countries:** 113  **Ports:** 487
