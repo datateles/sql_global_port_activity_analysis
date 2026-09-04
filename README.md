@@ -364,10 +364,10 @@ In progress with Microsoft Excel, a visually compelling narrative with data base
   - **Exports:** 11.0+ billion tonnes
 
 - **Top Export Countries:**  
-  - 1. China (≈3.5B t) 2. Brazil (≈1.2B t) 3. Russia (≈1.0B t) 4. Singapore (≈0.9B t) 5. USA (≈0.8B t)
+  1. China (≈3.5B t) 2. Brazil (≈1.2B t) 3. Russia (≈1.0B t) 4. Singapore (≈0.9B t) 5. USA (≈0.8B t)
 
 - **Top Import Countries:**  
-  - 1. China 2. Singapore 3. Japan 4. South Korea 5. USA
+  1. China 2. Singapore 3. Japan 4. South Korea 5. USA
 
 - **Busiest Export Ports:**  
   - Shanghai, Singapore, Santos, Ust-Luga, Qingdao
